@@ -37,7 +37,7 @@ export const WorkoutHistory: React.FC<Props> = observer(({history}) => {
         // const hc = (
 
         // );
-        if (i % 3 === 0) {
+        if (i % 2 === 0) {
             rows.push([{
                 date,
                 exercises
@@ -64,7 +64,6 @@ export const WorkoutHistory: React.FC<Props> = observer(({history}) => {
                             } header={date} currentExercises={exercises} />
                         </View>
                     ))}
-                    {item.length < 3 ? <View style={styles.cardContainer} /> : null}
                     {item.length < 2 ? <View style={styles.cardContainer} /> : null}
                 </View>
             )} 

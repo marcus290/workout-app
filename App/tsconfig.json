@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "noEmit": true,
     "lib": ["dom", "esnext"],
     "jsx": "react-native",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false
+  },
+  "include": [
+    "src"
+  ]
 }

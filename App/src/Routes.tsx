@@ -11,7 +11,7 @@ export const Routes = observer(() => {
         <Switch>
           <Route exact path="/" component={WorkoutHistory} />
           <Route exact path="/current-workout" component={CurrentWorkout} />
-          <Route exact path="/workout/:year/:month/:day" component={CurrentWorkout} />
+          <Route exact path="/:year-:month-:day" component={CurrentWorkout} />
         </Switch>
       </Router>
         );
